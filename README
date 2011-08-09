@@ -1,0 +1,69 @@
+///////////////////////////////////TITLE/////////////////////////////////////////////////////
+
+// jquery.keepTop.js
+
+/////////////////////////////////// INFO ////////////////////////////////////////////////////
+//This jQuery plug-in was created by Kim Doberstein (kimdobie@gmail.com)
+//
+// Version 1.0.0
+// Date: 08/09/2011
+//
+// Keep an info bar at the top of the screen instead of scrolling under the top "fold".
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////// NOTE ////////////////////////////////////////////////////////
+//This is a plug-in to the jQuery framework. See http://jquery.com/ for more information and to download the latest version of jQuery.
+
+//This plug-in was developed on jQuery version 1.6.2
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////// HOW TO USE ////////////////////////////////////////////////////
+// Just daisy chain to the jQuery object you want to keep at the top.  Be sure to call it after document ready.
+
+// $(document).ready(function(){$('#keepTop').keepTop();});
+
+
+
+///////////////////////////////////// OPTIONAL PARAMS ///////////////////////////////////////////////
+
+// Any of the following optional params can be passed in an object:
+
+// 'zindex':400,				- Z index of the keepTop object
+
+// 'createPrint':false,            - Create copy of the keepTop object so it can be printed in the correct position
+
+// 'printClass':'banner-print',    - Class of the print version of the keepTop object
+
+// 'divHolder':true,			- Create a div that will hold the space where the keepTop object was located
+
+// 'rulerID':'keepTopRuler',		- ID of a div that the script creates to help calculcate the position/size of keepTop object.
+
+// 'left':0,					- Left position of the keepTop object (if fitWidth is false)
+
+// 'fitWidth':true				-  Keep the onload width (and left positioning) of the keepTop object
+
+// Example: $(document).ready(function(){$('#keepTop').keepTop({'createPrint':true,'zindex':500,'fitWidth':false});});
+
+///////////////////////////////////// BROWSERS TESTED ///////////////////////////////////////////////
+// IE 7, IE 8, Chrome 13 (mac), Firefox 5.0.1(max)
+
+
+
+///////////////////////////////////// KNOWN ISSUES ///////////////////////////////////////////////
+// There can only be one keep top object at time.  This object can only be at the very top of the screen.
+
+
+
+///////////////////////////////////// FUTURE DEVELOPMENT ///////////////////////////////////////////////
+// Allow for a top position besides 0;
+// Code optimization
+// Allow for a bottom positioned object
+// Allow for more than 1 keepTop object (simular to pin/Unpin)
+
+
+
+///////////////////////////////////// CHANGES TO THIS VERSION 1.0.0 ///////////////////////////////////////////////
+//New version
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
