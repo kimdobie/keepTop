@@ -1,8 +1,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // jquery.keepTop.js
-// version 1.0.0 
-// 08/09/2011
+// version 1.0.1 
+// 09/06/2011
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 (function( $ ){
@@ -14,6 +14,7 @@
 			'zindex':400,
 			'createPrint':false,
 			'divHolder':true,
+			'divHolderClass':'keepTopHolder',
 			'printClass':'banner-print',
 			'rulerID':'keepTopRuler',
 			'left':0,
@@ -26,7 +27,7 @@
 			if(settings.init==true){	
 		
 				if(settings.createPrint==true)$this.clone().removeAttr('id').addClass(settings.printClass).insertAfter($this);
-				if(settings.divHolder==true)$this.after("<div style='height:"+$this.outerHeight()+"px'></div>");
+				if(settings.divHolder==true)$this.after("<div style='height:"+$this.outerHeight()+"px' class='"+settings.divHolderClass+"'></div>");
 				
 				$this.after("<div style='height:0px' id='"+settings.rulerID+"'></div>");
 				$this.css({'right':'0','position':'fixed','zindex':settings.zindex});
