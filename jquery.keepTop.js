@@ -1,8 +1,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // jquery.keepTop.js
-// version 1.0.1 
-// 09/06/2011
+// version 1.0.2 
+// 09/26/2011
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 (function( $ ){
@@ -30,7 +30,7 @@
 				if(settings.divHolder==true)$this.after("<div style='height:"+$this.outerHeight()+"px' class='"+settings.divHolderClass+"'></div>");
 				
 				$this.after("<div style='height:0px' id='"+settings.rulerID+"'></div>");
-				$this.css({'right':'0','position':'fixed','zindex':settings.zindex});
+				$this.css({'right':'0','position':'fixed','z-index':settings.zindex});
 				settings.init=false;
 				$(window).scroll(function(){$this.keepTop(settings);}).resize(function(){$this.keepTop(settings);});
 			
